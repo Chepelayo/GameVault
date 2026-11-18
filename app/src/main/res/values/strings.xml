@@ -79,9 +79,9 @@
     <string name="hint_platform">Plataforma</string>
     <string name="hint_release_year">Año de lanzamiento</string>
     <string name="hint_status">Estado</string>
-    <string name="hint_played_year">Año en el que lo jugué</string>
-    <string name="hint_score">Puntuación (0-10)</string>
-    <string name="helper_only_played">Solo si ya lo has jugado</string>
+    <string name="hint_played_year">Año en el que lo jugué (opcional)</string>
+    <string name="hint_score">Puntuación 0-10 (opcional)</string>
+    <string name="helper_only_played">Opcional · Solo si se ha jugado o empezado</string>
     <string name="hint_notes">Notas / reseña (opcional)</string>
     <string name="hint_cover">URL de la portada (opcional)</string>
     <string name="form_favorite">Marcar como favorito</string>

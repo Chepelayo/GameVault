@@ -207,22 +207,26 @@ public class GameFormActivity extends AppCompatActivity {
             valid = false;
         }
 
-        // Año jugado y puntuación: obligatorios solo si el juego ya se ha jugado
+        // Año jugado y puntuación: opcionales aunque el juego ya se haya jugado.
+        // Si el usuario introduce datos, se valida que estén en el rango correcto.
         if (selectedStatus.isPlayed()) {
-            Integer playedYear = Validators.parseIntOrNull(textOf(binding.etPlayedYear));
-            int minPlayed = releaseYear != null ? releaseYear : Validators.MIN_YEAR;
-            if (playedYear == null) {
-                binding.tilPlayedYear.setError(getString(R.string.error_played_year_required));
-                valid = false;
-            } else if (playedYear < minPlayed || playedYear > currentYear) {
-                binding.tilPlayedYear.setError(getString(R.string.error_played_year_range, minPlayed, currentYear));
-                valid = false;
+            String playedYearStr = textOf(binding.etPlayedYear).trim();
+            if (!playedYearStr.isEmpty()) {
+                Integer playedYear = Validators.parseIntOrNull(playedYearStr);
+                int minPlayed = releaseYear != null ? releaseYear : Validators.MIN_YEAR;
+                if (playedYear == null || playedYear < minPlayed || playedYear > currentYear) {
+                    binding.tilPlayedYear.setError(getString(R.string.error_played_year_range, minPlayed, currentYear));
+                    valid = false;
+                }
             }
 
-            Double score = Validators.parseDoubleOrNull(textOf(binding.etScore));
-            if (score == null || score < 0 || score > 10) {
-                binding.tilScore.setError(getString(R.string.error_score_range));
-                valid = false;
+            String scoreStr = textOf(binding.etScore).trim();
+            if (!scoreStr.isEmpty()) {
+                Double score = Validators.parseDoubleOrNull(scoreStr);
+                if (score == null || score < 0 || score > 10) {
+                    binding.tilScore.setError(getString(R.string.error_score_range));
+                    valid = false;
+                }
             }
         }
 
@@ -279,6 +283,9 @@ public class GameFormActivity extends AppCompatActivity {
         if (selectedStatus.isPlayed()) {
             g.setPlayedYear(Validators.parseIntOrNull(textOf(binding.etPlayedYear)));
             g.setScore(Validators.parseDoubleOrNull(textOf(binding.etScore)));
+        } else {
+            g.setPlayedYear(null);
+            g.setScore(null);
         }
         g.setNotes(textOf(binding.etNotes).trim());
         g.setFavorite(binding.switchFavorite.isChecked());
