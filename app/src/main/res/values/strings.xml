@@ -1,3 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">GameVault</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="delete">Eliminar</string>
+    <string name="cd_back">Volver</string>
+    <string name="cd_cover">Portada del juego</string>
+    <string name="cd_favorite">Marcar o desmarcar como favorito</string>
+    <string name="cd_add_game">Añadir juego</string>
+
+    <!-- Navegación -->
+    <string name="nav_catalog">Catálogo</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="nav_stats">Estadísticas</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="title_catalog">Mi catálogo</string>
+    <string name="title_favorites">Favoritos</string>
+    <string name="title_stats">Estadísticas</string>
+    <string name="title_profile">Perfil</string>
+
+    <!-- Login / registro -->
+    <string name="login_subtitle">Gestiona tu biblioteca de videojuegos</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_name">Nombre de usuario</string>
+    <string name="hint_confirm_password">Repite la contraseña</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="btn_register">Crear cuenta</string>
+    <string name="login_no_account">¿No tienes cuenta? Regístrate</string>
+    <string name="register_have_account">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="register_title">Crea tu cuenta</string>
+
+    <!-- Errores generales -->
+    <string name="error_email_invalid">Introduce un correo válido</string>
+    <string name="error_password_required">Introduce la contraseña</string>
+    <string name="error_password_short">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="error_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="error_name_required">Introduce un nombre de usuario</string>
+    <string name="error_network">Sin conexión. Comprueba tu red e inténtalo de nuevo</string>
+    <string name="error_email_in_use">Ya existe una cuenta con ese correo</string>
+    <string name="error_weak_password">La contraseña es demasiado débil</string>
+    <string name="error_invalid_credentials">Correo o contraseña incorrectos</string>
+    <string name="error_generic">Ha ocurrido un error inesperado</string>
+    <string name="error_permission">No tienes permisos para realizar esta acción</string>
+    <string name="error_no_share_app">No hay ninguna app disponible para compartir</string>
+
+    <!-- Catálogo -->
+    <string name="search_hint">Buscar por título o desarrolladora</string>
+    <string name="filter_all">Todos</string>
+    <string name="status_pending">Pendiente</string>
+    <string name="status_playing">Jugando</string>
+    <string name="status_completed">Completado</string>
+    <string name="status_abandoned">Abandonado</string>
+    <string name="sort_label">Ordenar por</string>
+    <string-array name="sort_options">
+        <item>Título (A-Z)</item>
+        <item>Mejor puntuación</item>
+        <item>Año de lanzamiento</item>
+        <item>Añadidos recientemente</item>
+    </string-array>
+    <string name="share_list">Compartir lista</string>
+    <string name="empty_catalog">Aún no tienes juegos.\nPulsa + para añadir el primero</string>
+    <string name="empty_favorites">Aún no tienes favoritos.\nMarca un juego con el corazón</string>
+    <string name="empty_no_results">Ningún juego coincide con los filtros</string>
+    <string name="developer_year_format">%1$s · %2$d</string>
+    <string name="platform_genre_format">%1$s · %2$s</string>
+    <string name="played_year_format">Jugado en %1$d</string>
+
+    <!-- Formulario -->
+    <string name="form_title_new">Añadir juego</string>
+    <string name="form_title_edit">Editar juego</string>
+    <string name="form_autofill">Autocompletar desde RAWG</string>
+    <string name="form_autofilled">Datos importados de RAWG. Revísalos antes de guardar</string>
+    <string name="hint_title">Título</string>
+    <string name="hint_genre">Género</string>
+    <string name="hint_developer">Desarrolladora</string>
+    <string name="hint_platform">Plataforma</string>
+    <string name="hint_release_year">Año de lanzamiento</string>
+    <string name="hint_status">Estado</string>
+    <string name="hint_played_year">Año en el que lo jugué</string>
+    <string name="hint_score">Puntuación (0-10)</string>
+    <string name="helper_only_played">Solo si ya lo has jugado</string>
+    <string name="hint_notes">Notas / reseña (opcional)</string>
+    <string name="hint_cover">URL de la portada (opcional)</string>
+    <string name="form_favorite">Marcar como favorito</string>
+    <string name="form_saved">Juego guardado</string>
+    <string name="form_review_fields">Revisa los campos marcados en rojo</string>
+    <string name="error_title_required">El título es obligatorio</string>
+    <string name="error_title_too_long">Máximo 100 caracteres</string>
+    <string name="error_genre_required">Selecciona un género</string>
+    <string name="error_developer_required">La desarrolladora es obligatoria</string>
+    <string name="error_platform_required">Selecciona una plataforma</string>
+    <string name="error_release_year">Introduce un año entre %1$d y %2$d</string>
+    <string name="error_played_year_required">Indica el año en que lo jugaste</string>
+    <string name="error_played_year_range">El año debe estar entre %1$d y %2$d</string>
+    <string name="error_score_range">La puntuación debe estar entre 0 y 10</string>
+    <string name="error_notes_too_long">Máximo 500 caracteres</string>
+    <string name="error_cover_invalid">Introduce una URL válida (http o https)</string>
+    <string-array name="genres">
+        <item>Action</item><item>Adventure</item><item>RPG</item><item>Shooter</item>
+        <item>Strategy</item><item>Puzzle</item><item>Platformer</item><item>Simulation</item>
+        <item>Sports</item><item>Racing</item><item>Fighting</item><item>Indie</item>
+        <item>Arcade</item><item>Casual</item><item>Family</item><item>Card</item>
+        <item>Educational</item><item>Massively Multiplayer</item>
+    </string-array>
+    <string-array name="platforms">
+        <item>PC</item><item>PlayStation 5</item><item>PlayStation 4</item>
+        <item>Xbox Series S/X</item><item>Xbox One</item><item>Nintendo Switch</item>
+        <item>Nintendo 3DS</item><item>iOS</item><item>Android</item><item>macOS</item><item>Linux</item>
+    </string-array>
+
+    <!-- Detalle -->
+    <string name="action_share">Compartir</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="fav_add">Añadir a favoritos</string>
+    <string name="fav_remove">Quitar de favoritos</string>
+    <string name="detail_no_score">Sin puntuación</string>
+    <string name="detail_not_played">Aún sin jugar</string>
+    <string name="detail_notes_label">Mi reseña</string>
+    <string name="detail_no_notes">No has escrito ninguna nota.</string>
+    <string name="delete_title">Eliminar juego</string>
+    <string name="delete_message">¿Seguro que quieres eliminar «%1$s» de tu catálogo?</string>
+
+    <!-- RAWG -->
+    <string name="rawg_title">Buscar en RAWG</string>
+    <string name="rawg_hint">Nombre del juego</string>
+    <string name="btn_search">Buscar</string>
+    <string name="rawg_prompt">Busca un juego para autocompletar sus datos</string>
+    <string name="rawg_empty">Sin resultados. Prueba con otro nombre</string>
+    <string name="rawg_attribution">Datos proporcionados por RAWG.io</string>
+    <string name="error_query_short">Escribe al menos 2 caracteres</string>
+    <string name="error_rawg_key_missing">Falta RAWG_API_KEY en local.properties</string>
+    <string name="error_rawg_http">RAWG no devolvió resultados. Inténtalo de nuevo</string>
+
+    <!-- Estadísticas -->
+    <string name="stats_total">Juegos</string>
+    <string name="stats_average">Nota media</string>
+    <string name="stats_completed">Completados</string>
+    <string name="stats_top_genre">Género más frecuente</string>
+    <string name="stats_by_status">Por estado</string>
+    <string name="stats_by_platform">Por plataforma</string>
+    <string name="stats_top_rated">Mejor valorados</string>
+    <string name="stats_empty">Añade juegos para ver tus estadísticas</string>
+    <string name="percent_format">%1$d %%</string>
+    <string name="no_data_dash">—</string>
+
+    <!-- Perfil -->
+    <string name="profile_default_name">Jugador</string>
+    <string name="profile_theme">Tema</string>
+    <string name="theme_system">Sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+    <string name="profile_about">Acerca de</string>
+    <string name="profile_credits">Datos de juegos: RAWG.io\nHecho con Firebase y Material Design</string>
+    <string name="btn_logout">Cerrar sesión</string>
+    <string name="logout_title">Cerrar sesión</string>
+    <string name="logout_message">¿Quieres cerrar tu sesión?</string>
+
+    <!-- Compartir -->
+    <string name="share_list_title">Compartir lista</string>
+    <string name="share_game_title">Compartir juego</string>
+    <string name="share_list_header">Mi lista de juegos (%1$d):</string>
+    <string name="share_game_line">%1$s (%2$s) · %3$s</string>
+    <string name="share_score_suffix">" · %1$s/10"</string>
+    <string name="share_empty">No hay juegos que compartir</string>
 </resources>

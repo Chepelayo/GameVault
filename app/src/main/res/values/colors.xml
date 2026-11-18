@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Cabecera y barra de navegación: oscuras en ambos modos (estilo Steam) -->
+    <color name="steam_header">#171A21</color>
+    <color name="steam_on_header">#C7D5E0</color>
+    <color name="steam_nav_active">#66C0F4</color>
+    <color name="steam_nav_inactive">#8F98A0</color>
+    <color name="steam_container">#2A475E</color>
+    <color name="steam_on_container">#C7D5E0</color>
+
+    <!-- Colores que cambian entre modo claro y oscuro -->
+    <color name="steam_bg">#E6ECF1</color>
+    <color name="steam_surface">#FFFFFF</color>
+    <color name="steam_stroke">#C5D0DA</color>
+    <color name="steam_text_primary">#1B2838</color>
+    <color name="steam_text_secondary">#4F6272</color>
+    <color name="steam_accent">#1B77C4</color>
+    <color name="steam_green">#4C8C20</color>
+
+    <color name="favorite">#E0485B</color>
+    <color name="status_pending">#6D7F8F</color>
+    <color name="status_playing">#1A9FFF</color>
+    <color name="status_completed">#4C8C20</color>
+    <color name="status_abandoned">#C15755</color>
+    <color name="score_high">#4C8C20</color>
+    <color name="score_mid">#B8860B</color>
+    <color name="score_low">#B8433F</color>
 </resources>
